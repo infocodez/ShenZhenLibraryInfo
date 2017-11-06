@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SzLib</string>
+    <string name="description">深圳图书馆实行“全面开放、免证进馆、分层管理、一卡通行”，面向所有公众免费开放，以最大限度地满足读者需求为宗旨，365天为读者提供高效、便捷、多元化的文化服务。</string>
+    <string name="address">广东省深圳市福田区福中一路2001号</string>
+    <string name="website">https://www.szlib.org.cn</string>
+    <string name="email">reference@szlib.org.cn</string>
+    <string name="phone_number">0755-82841212</string>
+</resources>
