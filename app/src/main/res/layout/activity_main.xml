@@ -10,114 +10,67 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="4"
+        android:layout_weight="1"
         android:scaleType="fitXY"
         android:src="@drawable/szlib"
         tools:ignore="ContentDescription" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
+        android:padding="@dimen/description_padding"
         android:text="@string/description"
         android:textAlignment="textStart" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:orientation="vertical">
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/LinearLayout_padding_LeftRight"
+        android:paddingRight="@dimen/LinearLayout_padding_LeftRight">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/phone"
-                tools:ignore="ContentDescription" />
+            android:autoLink="phone"
+            android:drawablePadding="@dimen/drawablePadding"
+            android:drawableStart="@drawable/phone"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/phone_number"
+            android:textColorLink="@android:color/black" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:fontFamily="sans-serif"
-                android:autoLink="phone"
-                android:textColorLink="@android:color/black"
-                android:text="@string/phone_number"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/email"
-                tools:ignore="ContentDescription" />
+            android:autoLink="email"
+            android:drawablePadding="@dimen/drawablePadding"
+            android:drawableStart="@drawable/email"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/email"
+            android:textColorLink="@android:color/black" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:fontFamily="sans-serif"
-                android:autoLink="email"
-                android:textColorLink="@android:color/black"
-                android:text="@string/email" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/web"
-                tools:ignore="ContentDescription" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:fontFamily="sans-serif"
-                android:autoLink="web"
-                android:textColorLink="@android:color/holo_blue_dark"
-                android:text="@string/website"/>
-        </LinearLayout>
+            android:autoLink="web"
+            android:drawablePadding="@dimen/drawablePadding"
+            android:drawableStart="@drawable/web"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/website"
+            android:textColorLink="@android:color/holo_blue_dark" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="2dp"
-            android:paddingBottom="16dp"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/location"
-                tools:ignore="ContentDescription" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:fontFamily="sans-serif"
-                android:textColor="@android:color/black"
-                android:text="@string/address"/>
-        </LinearLayout>
+            android:drawablePadding="@dimen/drawablePadding"
+            android:drawableStart="@drawable/location"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/address"
+            android:textColor="@android:color/black" />
 
     </LinearLayout>
 

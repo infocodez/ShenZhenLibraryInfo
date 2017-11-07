@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="description_padding">16dp</dimen>
+    <dimen name="LinearLayout_padding_LeftRight">16dp</dimen>
+    <dimen name="drawablePadding">5dp</dimen>
+</resources>
